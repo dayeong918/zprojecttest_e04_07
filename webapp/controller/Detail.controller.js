@@ -14,7 +14,7 @@ sap.ui.define([
             },
             _onPatternMatched: function(oEvent){
                 //oEvent.getParametrs().arguments
-                oEvent.getParameter("arguments");
+                var oArgu = oEvent.getParameter("arguments");
                 console.log(oArgu);
             },
             onNavButtonPress: function(){
@@ -24,7 +24,7 @@ sap.ui.define([
                 //      1: Router Name
                 //      2: Parameters (전달해야할 값 등록해서 사용할 수 있음)
                 //      3: Route History Clear (라우트 히스토리 클리어할건지)
-            },
+            }
             
         });
     });
